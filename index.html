@@ -7,7 +7,77 @@
 	<script src='https://cdn.tailwindcss.com'></script>
 	<link rel='stylesheet' href='assets/css/style.css'>
 </head>
-<body>
-	<!-- Content for index.html will be generated here -->
+<body class="bg-gray-100">
+	<!-- Navigation Bar -->
+	<nav class="bg-white shadow-md">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="flex justify-between h-16">
+				<div class="flex">
+					<div class="flex-shrink-0 flex items-center">
+						<a href="index.html" class="text-xl font-bold text-indigo-600">Coastal Escape Rentals</a>
+					</div>
+					<div class="hidden md:ml-6 md:flex space-x-8">
+						<a href="index.html" class="inline-flex items-center px-1 pt-1 border-b-2 border-indigo-500 text-sm font-medium text-gray-900 focus:outline-none focus:border-indigo-700 transition duration-150 ease-in-out">Home</a>
+						<a href="properties.html" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">Properties</a>
+						<a href="about.html" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">About</a>
+						<a href="contact.html" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">Contact</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section class="relative py-24 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/random/1600x900?beach')">
+		<div class="absolute inset-0 bg-black opacity-40"></div>
+		<div class="container mx-auto text-center relative z-10">
+			<h1 class="text-4xl font-bold text-white mb-4">Find Your Perfect Coastal Escape</h1>
+			<p class="text-lg text-gray-200 mb-8">Discover luxurious vacation rentals along the stunning California coast.</p>
+			<a href="properties.html" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Browse Properties</a>
+		</div>
+	</section>
+
+	<!-- Featured Properties Section -->
+	<section class="py-12">
+		<div class="container mx-auto">
+			<h2 class="text-3xl font-semibold text-gray-800 text-center mb-8">Featured Properties</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Property 1 -->
+				<div class="bg-white rounded-lg shadow-md overflow-hidden">
+					<img src="https://source.unsplash.com/random/600x400?beachhouse" alt="Beach House" class="w-full h-52 object-cover">
+					<div class="p-4">
+						<h3 class="text-xl font-semibold text-gray-800 mb-2">Ocean View Villa</h3>
+						<p class="text-gray-600 text-sm mb-4">Enjoy breathtaking ocean views from this luxurious villa in Malibu. Featuring 4 bedrooms, a private pool, and direct beach access.</p>
+						<a href="#" class="text-indigo-500 hover:text-indigo-700">Learn More</a>
+					</div>
+				</div>
+
+				<!-- Property 2 -->
+				<div class="bg-white rounded-lg shadow-md overflow-hidden">
+					<img src="https://source.unsplash.com/random/600x400?coastalhome" alt="Coastal Home" class="w-full h-52 object-cover">
+					<div class="p-4">
+						<h3 class="text-xl font-semibold text-gray-800 mb-2">Charming Cottage by the Sea</h3>
+						<p class="text-gray-600 text-sm mb-4">Relax and unwind in this cozy cottage nestled in the heart of Carmel-by-the-Sea. Perfect for a romantic getaway or a small family vacation.</p>
+						<a href="#" class="text-indigo-500 hover:text-indigo-700">Learn More</a>
+					</div>
+				</div>
+
+				<!-- Property 3 -->
+				<div class="bg-white rounded-lg shadow-md overflow-hidden">
+					<img src="https://source.unsplash.com/random/600x400?luxuryapartment" alt="Luxury Apartment" class="w-full h-52 object-cover">
+					<div class="p-4">
+						<h3 class="text-xl font-semibold text-gray-800 mb-2">Modern Apartment with City Views</h3>
+						<p class="text-gray-600 text-sm mb-4">Experience the vibrant city life in this stylish apartment located in downtown San Diego. Offers stunning views, modern amenities, and easy access to local attractions.</p>
+						<a href="#" class="text-indigo-500 hover:text-indigo-700">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="bg-gray-800 py-8 text-white text-center">
+		<p>&copy; 2023 Coastal Escape Rentals. All rights reserved.</p>
+	</footer>
 </body>
 </html>
